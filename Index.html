@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Feedback Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Customer Feedback Form</h1>
+  </header>
+
+  <main>
+    <form id="feedback-form">
+      <label for="username">Name:</label>
+      <input type="text" id="username" placeholder="Enter your name" data-tooltip="Please enter your full name.">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" data-tooltip="Enter a valid email address.">
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" placeholder="Write your feedback" data-tooltip="Tell us what you think!" maxlength="200"></textarea>
+      <p id="char-count">0 / 200 characters</p>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <section id="feedback-display">
+      <h2>Feedback Received</h2>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Feedback Portal</p>
+  </footer>
+
+  <script src="cp_1.js"></script>
+</body>
+</html>
